@@ -8,8 +8,6 @@ from sklearn.datasets import load_boston
 
 boston = load_boston()
 
-print type(boston)
-
 print boston.keys()
 print boston.data.shape
 print boston.feature_names
