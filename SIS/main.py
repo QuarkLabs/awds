@@ -10,41 +10,12 @@
 
 import numpy as np
 import pandas as pd
-import scipy.stats as stats
-import matplotlib.pyplot as plt
 import sklearn
 
-from sklearn.datasets import load_boston
+from data_processor import load_dataset
 
-boston = load_boston()
+raw_data_bunch = load_dataset()
 
-# print boston.keys()
-# print boston.data.shape
-# print boston.feature_names
-# print boston.DESCR
-
-bos = pd.DataFrame(boston.data)
-bos.columns = boston.feature_names
+bos = pd.DataFrame(raw_data_bunch.data)
+bos.columns = raw_data_bunch.feature_names
 print bos.head()
-
-bos['PRICE'] = boston.target
-
-from sklearn.linear_model import LinearRegression
-X = bos.drop('PRICE', axis=1)
-
-lm = LinearRegression()
-
-lm.fit(X, bos.PRICE)
-
-LinearRegression(copy_X=True, fit_intercept=True, normalize=False)
-
-print 'Estimated intercept coefficient:', lm.intercept_
-print 'Number of coefficients:', len(lm.coef_)
-
-print pd.DataFrame(zip(X.columns, lm.coef_), columns=['features', 'estimatedCoefficients'])
-
-plt.scatter(bos.RM, bos.PRICE)
-plt.xlabel('Average number of rooms per dwelling (RM)')
-plt.ylabel('Housing price')
-plt.title('Relationship between RM and Price')
-plt.show()
