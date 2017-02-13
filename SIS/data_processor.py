@@ -4,6 +4,8 @@ from os.path import join
 
 import numpy as np
 
+import pandas as pd
+
 
 class Bunch(dict):
     def __init__(self, **kwargs):
@@ -57,3 +59,5 @@ def load_dataset():
                  # last column is target value
                  feature_names=feature_names[:-1],
                  DESCR=descr_text)
+
+

@@ -4,18 +4,15 @@ import sklearn
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-from data_processor import load_dataset
-from utils import show_bunch_properties
+import data_processor
+import utils
 
 
 if __name__ == '__main__':
-    raw_data_bunch = load_dataset()
+    raw_data_bunch = data_processor.load_dataset()
 
-    show_bunch_properties(raw_data_bunch)
+    utils.show_bunch_properties(raw_data_bunch)
 
-
-
-    # Converting raw data to pandas data frame
     data = pd.DataFrame(raw_data_bunch.data)
     data.columns = raw_data_bunch.feature_names
     print data.head()
@@ -30,6 +27,7 @@ if __name__ == '__main__':
 
     l_reg = LinearRegression(n_jobs=-1)
 
+    # Train the regression model
     l_reg.fit(X, data.WATER)
 
     print 'Estimated intercept coefficient:', l_reg.intercept_
