@@ -1,5 +1,6 @@
 import os
-import pickle
+from cPickle import dump
+from cPickle import load
 
 
 def serialize(obj, name):
@@ -7,7 +8,7 @@ def serialize(obj, name):
     pickle_file = open(pickle_file_path, 'wb')
 
     # Save the object to pickle file
-    pickle.dump(obj, pickle_file)
+    dump(obj, pickle_file)
 
 
 def deserialize(name):
@@ -15,7 +16,7 @@ def deserialize(name):
     pickle_file = open(pickle_file_path, 'rb')
 
     # Load the pickle file
-    obj = pickle.load(pickle_file)
+    obj = load(pickle_file)
     pickle_file.close()
 
     return obj

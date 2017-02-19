@@ -21,6 +21,3 @@ if __name__ == '__main__':
     mseFull = np.mean((data_pd.REQ_WATER - l_reg.predict(X)) ** 2)
     print '________________________________________________________________________'
     print 'Mean squared distance: ', mseFull
-
-
-
