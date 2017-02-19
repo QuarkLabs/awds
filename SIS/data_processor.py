@@ -4,8 +4,6 @@ from os.path import join
 
 import numpy as np
 
-import pandas as pd
-
 
 class Bunch(dict):
     def __init__(self, **kwargs):
@@ -30,6 +28,15 @@ class Bunch(dict):
         # Overriding __setstate__ to be a noop has the effect of
         # ignoring the pickled __dict__
         pass
+
+    def show_properties(self):
+        print ''
+        print 'Bunch properties________________________________________________________'
+        print self.keys()
+        print self.data.shape
+        print self.feature_names
+        # print bunch.DESCR
+        print ''
 
 
 def load_dataset():
