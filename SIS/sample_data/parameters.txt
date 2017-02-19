@@ -1,9 +1,0 @@
-TYPE            : 1,2
-AGE             : 1,2,3
-
-TEMPERATURE     : 25-30
-SHOWER          : 1,2,3,4
-MOISTURE        : 1,2,3
-
-
-REC_WATER       : 300-1000

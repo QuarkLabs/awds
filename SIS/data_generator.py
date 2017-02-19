@@ -9,7 +9,7 @@ raw_file = open(raw_file_path, 'w')
 
 writes = csv.writer(raw_file, delimiter=',', quoting=csv.QUOTE_NONE, lineterminator='\n')
 
-crop_types = [1]
+crop_types = [1, 2]
 ages = [1, 2, 3]
 temperatures = [25, 26, 27, 28, 29, 30]
 showers = [1, 2, 3, 4]
