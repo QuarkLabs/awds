@@ -28,14 +28,14 @@ for crop_type in crop_types:
     for age in ages:
         for temperature in temperatures:
             for shower in showers:
-                base_moisture = (shower * 0.4) / temperature
+                base_moisture = (shower * 0.2) / temperature
                 moisture_off = base_moisture * 0.01
                 moisture = random.uniform(base_moisture - moisture_off, base_moisture + moisture_off)
 
-                base_req_water = moisture / temperature
+                base_req_water = 1.0 / (moisture * 0.5)
                 req_water_off = base_req_water * 0.01
-                req_water = random.uniform(base_req_water - req_water_off, base_req_water + req_water_off)
 
+                req_water = random.uniform(base_req_water - req_water_off, base_req_water + req_water_off)
                 rows.append([crop_type, age, temperature, shower, round(moisture, 5), round(req_water, 5)])
 
 # Write the data to csv file
