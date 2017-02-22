@@ -12,10 +12,16 @@ if __name__ == '__main__':
     print '________________________________________________________________________'
     print pd.DataFrame(zip(X.columns, l_reg.coef_), columns=['features', 'estimatedCoefficients'])
 
-    plt.scatter(data_pd.TEMPERATURE, data_pd.REQ_WATER)
-    plt.xlabel('Temperature')
-    plt.ylabel('Required water')
-    plt.title('Relationship between temperature and required water')
+    # plt.scatter(data_pd.TEMPERATURE, data_pd.REQ_WATER)
+    # plt.xlabel('Temperature')
+    # plt.ylabel('Required water')
+    # plt.title('Relationship between temperature and required water')
+    # plt.show()
+
+    plt.scatter(data_pd.REQ_WATER, l_reg.predict(X))
+    plt.xlabel('Required water')
+    plt.ylabel('Predicted water')
+    plt.title('Relationship between required water and predicted water')
     plt.show()
 
     mseFull = np.mean((data_pd.REQ_WATER - l_reg.predict(X)) ** 2)
