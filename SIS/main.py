@@ -1,23 +1,22 @@
-import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 
 import utils
 
-if __name__ == '__main__':
+
+def calculate_req_water(type, age, temperature, shower, moisture):
     data_pd = utils.deserialize('data_pd')
     l_reg = utils.deserialize('l_reg')
-    X = utils.deserialize('X')
 
-    print '________________________________________________________________________'
-    print pd.DataFrame(zip(X.columns, l_reg.coef_), columns=['features', 'estimatedCoefficients'])
+    X = pd.DataFrame({'TYPE': type, 'AGE': age, 'TEMPERATURE': temperature, 'SHOWER': shower, 'MOISTURE': moisture}, index=[0])
+    return l_reg.predict(X)
 
-    plt.scatter(data_pd.TEMPERATURE, data_pd.REQ_WATER)
-    plt.xlabel('Temperature')
-    plt.ylabel('Required water')
-    plt.title('Relationship between temperature and required water')
-    plt.show()
 
-    mseFull = np.mean((data_pd.REQ_WATER - l_reg.predict(X)) ** 2)
-    print '________________________________________________________________________'
-    print 'Mean squared distance: ', mseFull
+if __name__ == '__main__':
+    print calculate_req_water(1, 1, 25, 1, 0.01612)
+    # 1,1,25,1,0.01612,0.00064
+
+    print calculate_req_water(1, 1, 25, 2, 0.03172)
+    # 1,1,25,2,0.03172,0.00126
+
+    print calculate_req_water(1, 1, 25, 3, 0.04795)
+    # 1,1,25,3,0.04795,0.00194
