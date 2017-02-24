@@ -6,6 +6,7 @@ import utils
 def calculate_req_water(type, age, temperature, shower, moisture):
     l_reg = utils.deserialize('l_reg')
     X = pd.DataFrame({'TYPE': type, 'AGE': age, 'TEMPERATURE': temperature, 'SHOWER': shower, 'MOISTURE': moisture}, index=[0])
+    X = X[['TYPE', 'AGE', 'TEMPERATURE', 'SHOWER', 'MOISTURE']]
     return l_reg.predict(X)
 
 
