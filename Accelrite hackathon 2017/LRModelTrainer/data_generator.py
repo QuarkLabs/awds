@@ -131,9 +131,6 @@ def generate_data():
                     req_water = random.uniform(base_req_water - req_water_off, base_req_water + req_water_off)
                     req_water = map_range(req_water, pre_min_req_water, pre_max_req_water, min_req_water, max_req_water)
 
-                    if shower == 3 or shower == 4:
-                        req_water *= 0.7
-
                     min_row = [crop_type, age, temperature, shower, round(moisture, 5), round(req_water * 0.7, 5)]
                     min_rows.append(min_row)
                     rec_row = [crop_type, age, temperature, shower, round(moisture, 5), round(req_water, 5)]
