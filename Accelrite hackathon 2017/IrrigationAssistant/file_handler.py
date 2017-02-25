@@ -10,10 +10,16 @@ def update_files():
 
     from_generated_data = join(parent_path, 'LRModelTrainer', 'generated_data')
     to_generated_data = abspath('generated_data')
-    remove_tree(to_generated_data)
+    try:
+        remove_tree(to_generated_data)
+    except:
+        pass
     copy_tree(from_generated_data, to_generated_data)
 
     from_pickle_data = join(parent_path, 'LRModelTrainer', 'pickle_data')
     to_pickle_data = abspath('pickle_data')
-    remove_tree(to_pickle_data)
+    try:
+        remove_tree(to_pickle_data)
+    except:
+        pass
     copy_tree(from_pickle_data, to_pickle_data)
