@@ -12,7 +12,7 @@ off_percentage = 0.01
 min_moisture = 0.0
 max_moisture = 10.0
 min_req_water = 0.0
-max_req_water = 100.0
+max_req_water = 20.0
 
 
 def calculate_moisture(crop_type, shower, temperature):
