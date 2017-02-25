@@ -15,8 +15,8 @@ def calculate_req_water(type, age, temperature, shower, moisture):
     min_prediction = min_l_reg.predict(X)[0]
     rec_prediction = rec_l_reg.predict(X)[0]
 
-    return [min_prediction, rec_prediction]
-    # return [int(min_prediction), int(rec_prediction)]
+    # return [min_prediction, rec_prediction]
+    return [int(min_prediction), int(rec_prediction)]
 
 
 if __name__ == '__main__':

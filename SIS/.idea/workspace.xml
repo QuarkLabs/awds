@@ -3,27 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d342fc4d-458b-452b-ba6d-792c7649e7c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/file_handler.py" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/file_handler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/generated_data/min_raw_data.csv" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/generated_data/min_raw_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/generated_data/rec_raw_data.csv" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/generated_data/rec_raw_data.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/main.py" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_X.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_X.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_data_pd.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_data_pd.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_l_reg.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_l_reg.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_X.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_X.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_data_pd.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_data_pd.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_l_reg.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_l_reg.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/data_generator.py" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/data_generator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/generated_data/min_raw_data.csv" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/generated_data/min_raw_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/generated_data/rec_raw_data.csv" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/generated_data/rec_raw_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/min_X.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/min_X.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/min_data_pd.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/min_data_pd.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/min_l_reg.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/min_l_reg.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_X.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_X.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_data_pd.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_data_pd.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_l_reg.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_l_reg.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
