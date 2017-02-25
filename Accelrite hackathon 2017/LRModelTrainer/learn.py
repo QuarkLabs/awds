@@ -4,6 +4,8 @@ from sklearn.linear_model import LinearRegression
 
 import utils
 
+import matplotlib.pyplot as plt
+
 
 def train_model():
     min_raw_data_bunch = data_processor.load_min_dataset()
@@ -32,6 +34,17 @@ def train_model():
     # Train the regression model
     min_l_reg.fit(min_X, min_data_pd.REQ_WATER)
     rec_l_reg.fit(rec_X, rec_data_pd.REQ_WATER)
+
+    p = rec_data_pd.REQ_WATER
+    fig, ax = plt.subplots()
+    ax.scatter(p, rec_l_reg.predict(rec_X))
+    # ax.plot([p.min(), p.max()], [p.min(), p.max()], 'k--', lw=4)
+    ax.plot([0, p.max()], [0, p.max()], 'k--', lw=4)
+    ax.set_ybound(0, 25)
+    ax.set_xbound(0, 25)
+    ax.set_xlabel('Required water')
+    ax.set_ylabel('Predicted water')
+    plt.show()
 
     # Serialize the trained objects
     utils.serialize(min_data_pd, 'min_data_pd')

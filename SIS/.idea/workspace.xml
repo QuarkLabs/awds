@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d342fc4d-458b-452b-ba6d-792c7649e7c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/generated_data/min_raw_data.csv" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/generated_data/min_raw_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/generated_data/rec_raw_data.csv" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/generated_data/rec_raw_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_X.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_X.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_data_pd.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_data_pd.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_l_reg.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/min_l_reg.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_X.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_X.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_data_pd.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_data_pd.p" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_l_reg.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/pickle_data/rec_l_reg.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/main.py" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/IrrigationAssistant/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/data_generator.py" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/data_generator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/generated_data/min_raw_data.csv" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/generated_data/min_raw_data.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/generated_data/rec_raw_data.csv" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/generated_data/rec_raw_data.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/min_X.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/min_X.p" />
@@ -20,6 +13,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_X.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_X.p" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_data_pd.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_data_pd.p" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_l_reg.p" afterPath="$PROJECT_DIR$/../Accelrite hackathon 2017/LRModelTrainer/pickle_data/rec_l_reg.p" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,14 +37,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_b.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_b.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_a.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test_a.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="20" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,7 +129,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,6 +185,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,7 +540,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43799058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -591,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -599,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,20 +844,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rest_server.py" />
-    <entry file="file://$PROJECT_DIR$/test/test_b.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -915,7 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,11 +931,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="20" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

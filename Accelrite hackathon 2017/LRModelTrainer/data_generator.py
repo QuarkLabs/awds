@@ -20,7 +20,9 @@ def calculate_moisture(crop_type, shower, temperature):
 
 
 def calculate_req_water(crop_type, shower, temperature):
-    return (crop_type ** 2) * 1.0 / (shower * 0.8)
+    # return (crop_type ** 2) / (shower * 0.8)
+    return crop_type + (temperature - shower) + 5
+    # return crop_type * ((temperature ** 2) / (shower * 0.5))
 
 
 def calculate_min_moisture():
@@ -128,6 +130,9 @@ def generate_data():
                     req_water_off = base_req_water * off_percentage
                     req_water = random.uniform(base_req_water - req_water_off, base_req_water + req_water_off)
                     req_water = map_range(req_water, pre_min_req_water, pre_max_req_water, min_req_water, max_req_water)
+
+                    if shower == 3 or shower == 4:
+                        req_water *= 0.7
 
                     min_row = [crop_type, age, temperature, shower, round(moisture, 5), round(req_water * 0.7, 5)]
                     min_rows.append(min_row)
