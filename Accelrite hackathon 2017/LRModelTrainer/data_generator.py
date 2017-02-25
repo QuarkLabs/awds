@@ -20,7 +20,7 @@ def calculate_moisture(shower, temperature):
 
 
 def calculate_req_water(shower, temperature):
-    return (shower * 0.8) / (temperature * temperature)
+    return 1.0 / (shower * 0.8)
 
 
 def calculate_min_moisture():
