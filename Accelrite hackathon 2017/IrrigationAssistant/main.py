@@ -32,5 +32,3 @@ if __name__ == '__main__':
     print calculate_req_water(1, 1, 25, 4, 8)
     print calculate_req_water(1, 1, 25, 4, 9)
     print calculate_req_water(1, 1, 25, 4, 10)
-
-

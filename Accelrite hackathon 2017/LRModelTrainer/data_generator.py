@@ -20,9 +20,8 @@ def calculate_moisture(crop_type, shower, temperature):
 
 
 def calculate_req_water(crop_type, shower, temperature):
-    # return (crop_type ** 2) / (shower * 0.8)
+    # return (crop_type ** 2) - (shower * 0.7) + temperature
     return crop_type + (temperature - shower) + 5
-    # return crop_type * ((temperature ** 2) / (shower * 0.5))
 
 
 def calculate_min_moisture():
