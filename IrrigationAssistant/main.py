@@ -1,5 +1,6 @@
 import pandas as pd
 import MySQLdb
+from datetime import datetime
 
 import file_handler
 from utils import deserialize
@@ -44,18 +45,27 @@ def get_shower():
 
 
 def update_crop_condition(type, temperature, shower, moisture, water_volume):
-    cur = get_cursor()
-    # cur.execute("INSERT INTO ")
-
-
-def get_cursor():
     db = MySQLdb.connect(host="localhost",  # your host, usually localhost
                          user="root",  # your username
                          passwd="",  # your password
                          db="sis")  # name of the data base
 
     cur = db.cursor()
-    return cur
+    sql = "INSERT INTO crop_condition(farmer_has_crop_crop_id, temperature, shower, moisture, min_water, rec_water, calculated_date) " \
+            "VALUES(" \
+            + str(type) + ", " \
+            + str(temperature) + ", " \
+            + str(shower) + ", " \
+            + str(moisture) + ", " \
+            + str(water_volume[0]) + ", " \
+            + str(water_volume[1]) + ", '" \
+            + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + "')"
+    try:
+        cur.execute(sql)
+        db.commit()
+    except:
+        db.rollback()
+    db.close()
 
 
 if __name__ == '__main__':
