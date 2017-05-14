@@ -1,6 +1,8 @@
 import pandas as pd
 import MySQLdb
 from datetime import datetime
+import pyowm
+from dateutil.relativedelta import relativedelta
 
 import file_handler
 from utils import deserialize
@@ -22,7 +24,7 @@ def calculate_req_water(type, age, temperature, shower, moisture):
 
 
 def get_water(type, moisture):
-    age = get_age()
+    age = get_age(type)
     temperature = get_temperature()
     shower = get_shower()
 
@@ -32,25 +34,42 @@ def get_water(type, moisture):
     return water_volume[1]     # Return only recommended water amount
 
 
-def get_age():
-    return 1
+def get_age(type):
+    db = MySQLdb.connect(host="localhost", user="root", passwd="", db="sis")
+    cur = db.cursor()
+
+    cur.execute("SELECT start_date FROM farmer_has_crop WHERE crop_id = " + str(type))
+
+    start_date = cur.fetchall()[0][0]
+    end_date = datetime.now()
+    difference_in_years = relativedelta(end_date, start_date).years
+    db.close()
+
+    return difference_in_years
 
 
 def get_temperature():
-    return 25
+    owm = pyowm.OWM('762538bb02614c55a70704b5976c9065')
+    observation = owm.weather_at_place('London,uk')
+    w = observation.get_weather()
+    temperature = w.get_temperature('celsius')['temp']
+    return temperature
 
 
 def get_shower():
-    return 3
+    owm = pyowm.OWM('762538bb02614c55a70704b5976c9065')
+    observation = owm.weather_at_place('London,uk')
+    w = observation.get_weather()
+    rain = w.get_rain()
+    if rain == {}:
+        rain = 0
+    return rain
 
 
 def update_crop_condition(type, temperature, shower, moisture, water_volume):
-    db = MySQLdb.connect(host="localhost",  # your host, usually localhost
-                         user="root",  # your username
-                         passwd="",  # your password
-                         db="sis")  # name of the data base
-
+    db = MySQLdb.connect(host="localhost", user="root", passwd="", db="sis")
     cur = db.cursor()
+
     sql = "INSERT INTO crop_condition(farmer_has_crop_crop_id, temperature, shower, moisture, min_water, rec_water, calculated_date) " \
             "VALUES(" \
             + str(type) + ", " \
