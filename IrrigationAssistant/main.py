@@ -23,12 +23,11 @@ if __name__ == '__main__':
     # Copy the generated data and model from LRModelTrainer
     file_handler.update_files()
 
-    # print calculate_req_water(1, 1, 25, 1, 5)
-    # print calculate_req_water(2, 1, 25, 1, 5)
-    print calculate_req_water(1, 1, 25, 4, 4)
-    print calculate_req_water(1, 1, 25, 4, 5)
-    print calculate_req_water(1, 1, 25, 4, 6)
-    print calculate_req_water(1, 1, 25, 4, 7)
-    print calculate_req_water(1, 1, 25, 4, 8)
-    print calculate_req_water(1, 1, 25, 4, 9)
-    print calculate_req_water(1, 1, 25, 4, 10)
+    # print calculate_req_water(1, 1, 25, 4, 4)
+    # print calculate_req_water(1, 1, 25, 4, 5)
+    # print calculate_req_water(1, 1, 25, 4, 6)
+    # print calculate_req_water(1, 1, 25, 4, 7)
+    # print calculate_req_water(1, 1, 25, 4, 8)
+    # print calculate_req_water(1, 1, 25, 4, 9)
+    # print calculate_req_water(1, 1, 25, 4, 10)
+
