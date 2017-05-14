@@ -1,4 +1,5 @@
 import pandas as pd
+import MySQLdb
 
 import file_handler
 from utils import deserialize
@@ -20,19 +21,41 @@ def calculate_req_water(type, age, temperature, shower, moisture):
 
 
 def get_water(type, moisture):
-    condition = update_crop_condition(type, moisture)
-    water_volume = calculate_req_water(condition[0], condition[1], condition[2], condition[3], condition[4])
-    update_water_volume(water_volume)
+    age = get_age()
+    temperature = get_temperature()
+    shower = get_shower()
+
+    water_volume = calculate_req_water(type, age, temperature, shower, moisture)
+
+    update_crop_condition(type, temperature, shower, moisture, water_volume)
     return water_volume[1]     # Return only recommended water amount
 
 
-def update_crop_condition(type, moisture):
+def get_age():
+    return 1
+
+
+def get_temperature():
+    return 25
+
+
+def get_shower():
+    return 3
+
+
+def update_crop_condition(type, temperature, shower, moisture, water_volume):
     # Insert moisture to database
-    return [type, 2, 25, 4, moisture]   # type, age, temperature, shower, moisture
-
-
-def update_water_volume(water_volume):
     pass
+
+
+def get_cursor():
+    db = MySQLdb.connect(host="localhost",  # your host, usually localhost
+                         user="root",  # your username
+                         passwd="",  # your password
+                         db="sis")  # name of the data base
+
+    cur = db.cursor()
+    return cur
 
 
 if __name__ == '__main__':
