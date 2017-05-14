@@ -17,7 +17,7 @@ def calculate_req_water(type, age, temperature, shower, moisture):
     rec_prediction = rec_l_reg.predict(X)[0]
 
     # return [min_prediction, rec_prediction]
-    return [int(min_prediction), int(rec_prediction)]
+    return [min_prediction, rec_prediction]
 
 
 def get_water(type, moisture):
@@ -44,8 +44,8 @@ def get_shower():
 
 
 def update_crop_condition(type, temperature, shower, moisture, water_volume):
-    # Insert moisture to database
-    pass
+    cur = get_cursor()
+    # cur.execute("INSERT INTO ")
 
 
 def get_cursor():
