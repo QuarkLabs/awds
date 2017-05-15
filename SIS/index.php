@@ -59,7 +59,7 @@
     <div class="card card-banner card-chart card-green no-br">
       <div class="card-header">
         <div class="card-title">
-          <div class="title">Water Consumption Chart - Crop A</div>
+          <div class="title">Water Consumption Chart - Paddy</div>
         </div>
         <ul class="card-action">
           <li>
@@ -79,7 +79,7 @@
     <div class="card card-banner card-chart card-green no-br">
       <div class="card-header">
         <div class="card-title">
-          <div class="title">Water Consumption Chart - Crop B</div>
+          <div class="title">Water Consumption Chart - Tomato</div>
         </div>
         <ul class="card-action">
           <li>
@@ -101,10 +101,10 @@
     <div class="card-header">
       <ul class="nav nav-tabs">
         <li role="tab1" class="active">
-          <a href="#cropA" aria-controls="cropA" role="tab" data-toggle="tab">Crop A</a>
+          <a href="#cropA" aria-controls="cropA" role="tab" data-toggle="tab">Paddy</a>
         </li>
         <li role="tab2">
-          <a href="#cropB" aria-controls="cropB" role="tab" data-toggle="tab">Crop B</a>
+          <a href="#cropB" aria-controls="cropB" role="tab" data-toggle="tab">Tomato</a>
         </li>
         <li role="tab3">
           <a href="form-backup.php" aria-controls="" role="" data-toggle=""><i class="icon fa fa-plus fa-2x"></i></a>

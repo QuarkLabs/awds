@@ -17,6 +17,20 @@ def getvalues():
     print("Sending..", values)
     return resp
 
+@app.route('/sis/calcwater', methods = ['GET'])
+def getValuesGet():
+    data = json.loads(json.dumps(request.json))
+    print("\n==========")
+    print("Receiving..", data)
+
+    print("Processing..")
+    values = calcValues(data)
+    resp = Response(values, status =200, mimetype = 'application/json')
+
+    print("Sending..", values)
+    return resp
+
+
 def calcValues(data):
     print("aaa")
     waterAmount = get_water(data['CropId'], data['Moisture'])
