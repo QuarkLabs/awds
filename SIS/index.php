@@ -174,7 +174,7 @@
             <i class="icon fa fa-umbrella fa-4x"></i>
             <div class="content">
               <div class="title">Total Water Volume for the Week</div>
-              <div class="value"><span class="sign">Ltrs.</span><?php echo $water_val1['waterlvl1']; ?></div>
+              <div class="value"><span class="sign">Ltrs.</span><?php echo $water_val2['waterlvl2']; ?></div>
             </div>
           </div>
         </a>
