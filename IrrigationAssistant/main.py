@@ -35,7 +35,7 @@ def get_water(type, moisture):
 
 
 def get_age(type):
-    db = MySQLdb.connect(host="localhost", user="root", passwd="", db="sis")
+    db = MySQLdb.connect(host="localhost", user="root", passwd="mysql@linuxvm", db="sis")
     cur = db.cursor()
 
     cur.execute("SELECT start_date FROM farmer_has_crop WHERE crop_id = " + str(type))
@@ -67,7 +67,7 @@ def get_shower():
 
 
 def update_crop_condition(type, temperature, shower, moisture, water_volume):
-    db = MySQLdb.connect(host="localhost", user="root", passwd="", db="sis")
+    db = MySQLdb.connect(host="localhost", user="root", passwd="mysql@linuxvm", db="sis")
     cur = db.cursor()
 
     sql = "INSERT INTO crop_condition(farmer_has_crop_crop_id, temperature, shower, moisture, min_water, rec_water, calculated_date) " \
@@ -101,7 +101,3 @@ if __name__ == '__main__':
 
     print get_water(1, 5)
     print get_water(1, 10)
-
-
-
-
