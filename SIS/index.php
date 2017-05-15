@@ -6,14 +6,14 @@
     $cropID2 = 2;
 
     //Query for the temperature for crop 1
-    $temp_sql1 = "SELECT temperature FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID1'";
+    $temp_sql1 = "SELECT temperature FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID1' order by id desc limit 1";
     //Query for the temperature for crop 2
-    $temp_sql2 = "SELECT temperature FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID2'";
+    $temp_sql2 = "SELECT temperature FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID2' order by id desc limit 1";
 
     //Query for the water level for crop 1
-    $water_sql1 = "SELECT SUM(rec_water) AS waterlvl1 FROM crop_condition WHERE farmer_has_crop_crop_id = $cropID1 AND calculated_date BETWEEN '2017-05-03 00:00:00' AND '2017-05-14 00:00:00'";
+    $water_sql1 = "SELECT SUM(rec_water) AS waterlvl1 FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID1' AND calculated_date BETWEEN '2017-05-03 00:00:00' AND '2017-05-16 00:00:00'";
     //Query for the temperature for crop 2
-    $water_sql2 = "SELECT SUM(rec_water) AS waterlvl2 FROM crop_condition WHERE farmer_has_crop_crop_id = $cropID2 AND calculated_date BETWEEN '2017-05-03 00:00:00' AND '2017-05-14 00:00:00'";
+    $water_sql2 = "SELECT SUM(rec_water) AS waterlvl2 FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID2' AND calculated_date BETWEEN '2017-05-03 00:00:00' AND '2017-05-16 00:00:00'";
 
     //temp values
     $temp1 = mysqli_query($conn, $temp_sql1);
@@ -25,6 +25,7 @@
     $water_val1 = mysqli_fetch_assoc($water1);
     $water2 = mysqli_query($conn, $water_sql2);
     $water_val2 = mysqli_fetch_assoc($water2);
+    echo $water_val2['waterlvl2'];
 
 ?>
 <!DOCTYPE html>
@@ -59,7 +60,7 @@
     <div class="card card-banner card-chart card-green no-br">
       <div class="card-header">
         <div class="card-title">
-          <div class="title">Water Consumption Chart - Paddy</div>
+          <div class="title">Water Consumption Chart - Crop A</div>
         </div>
         <ul class="card-action">
           <li>
@@ -79,7 +80,7 @@
     <div class="card card-banner card-chart card-green no-br">
       <div class="card-header">
         <div class="card-title">
-          <div class="title">Water Consumption Chart - Tomato</div>
+          <div class="title">Water Consumption Chart - Crop B</div>
         </div>
         <ul class="card-action">
           <li>
@@ -101,10 +102,10 @@
     <div class="card-header">
       <ul class="nav nav-tabs">
         <li role="tab1" class="active">
-          <a href="#cropA" aria-controls="cropA" role="tab" data-toggle="tab">Paddy</a>
+          <a href="#cropA" aria-controls="cropA" role="tab" data-toggle="tab">Crop A</a>
         </li>
         <li role="tab2">
-          <a href="#cropB" aria-controls="cropB" role="tab" data-toggle="tab">Tomato</a>
+          <a href="#cropB" aria-controls="cropB" role="tab" data-toggle="tab">Crop B</a>
         </li>
         <li role="tab3">
           <a href="form-backup.php" aria-controls="" role="" data-toggle=""><i class="icon fa fa-plus fa-2x"></i></a>
