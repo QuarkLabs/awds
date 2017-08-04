@@ -1,4 +1,4 @@
-package sample;
+package main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +11,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("Raspberry pi input simulator");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 
