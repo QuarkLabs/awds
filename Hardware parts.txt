@@ -1,0 +1,5 @@
+Raspberry pi			x1
+Arduino mega			x1
+12V DC water motor		x2
+
+
