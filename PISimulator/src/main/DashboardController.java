@@ -38,7 +38,8 @@ public class DashboardController {
 
             System.out.println("Testing 1 - Send Http GET request");
             try {
-                http.sendGet(1, 1, 1, 1);
+                http.sendGet(1, t1, h1, m1);
+                http.sendGet(2, t2, h2, m2);
             } catch (Exception e) {
                 e.printStackTrace();
             }
