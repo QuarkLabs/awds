@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ServerSimulator.iml" filepath="$PROJECT_DIR$/ServerSimulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SES.iml" filepath="$PROJECT_DIR$/.idea/SES.iml" />
     </modules>
   </component>
 </project>
