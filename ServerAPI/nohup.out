@@ -1,0 +1,18 @@
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+/usr/local/lib/python2.7/dist-packages/sklearn/base.py:315: UserWarning: Trying to unpickle estimator LinearRegression from version pre-0.18 when using version 0.18.1. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+112.135.5.229 - - [14/May/2017 17:55:39] "POST /sis/calcwater HTTP/1.1" 200 -
+112.135.5.229 - - [14/May/2017 17:55:52] "POST /sis/calcwater HTTP/1.1" 200 -
+112.135.5.229 - - [14/May/2017 17:55:57] "POST /sis/calcwater HTTP/1.1" 200 -
+113.59.194.84 - - [14/May/2017 17:57:02] "POST /sis/calcwater HTTP/1.1" 200 -
+112.135.5.229 - - [14/May/2017 17:57:35] "POST /sis/calcwater HTTP/1.1" 200 -
+112.135.5.229 - - [14/May/2017 17:59:00] "POST /sis/calcwater HTTP/1.1" 200 -
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+/usr/local/lib/python2.7/dist-packages/sklearn/base.py:315: UserWarning: Trying to unpickle estimator LinearRegression from version pre-0.18 when using version 0.18.1. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+112.135.5.229 - - [14/May/2017 18:53:03] "POST /sis/calcwater HTTP/1.1" 200 -
+112.135.5.229 - - [14/May/2017 18:53:05] "POST /sis/calcwater HTTP/1.1" 200 -
+192.248.22.102 - - [15/May/2017 07:33:21] "POST /sis/calcwater HTTP/1.1" 200 -
+192.248.22.102 - - [15/May/2017 07:33:43] "POST /sis/calcwater HTTP/1.1" 200 -
+192.248.22.102 - - [15/May/2017 07:34:11] "POST /sis/calcwater HTTP/1.1" 200 -
+192.248.22.102 - - [15/May/2017 07:34:48] "POST /sis/calcwater HTTP/1.1" 200 -
