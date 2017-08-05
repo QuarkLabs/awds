@@ -18,7 +18,7 @@ import static org.apache.http.protocol.HTTP.USER_AGENT;
 
 public class HTTP {
     // HTTP GET request
-    public void sendGet(int cropId, double temperature, double humidity, double moisture) throws Exception {
+    public double sendGet(int cropId, double temperature, double humidity, double moisture) throws Exception {
 
         String url = "http://54.201.168.41:5000/sis/calcwater?" +
                 "CropId=" + cropId +
@@ -40,11 +40,24 @@ public class HTTP {
 
         StringBuffer result = new StringBuffer();
         String line = "";
+        double waterAmount = 0.0;
         while ((line = rd.readLine()) != null) {
             result.append(line);
+            if(line.startsWith("{\"CropId") && line.endsWith("}")){
+                String[] parts = line.split("\"");
+                String subP = parts[6].split(" ")[1];
+                subP = subP.substring(0, subP.length() - 1);
+                waterAmount = Double.parseDouble(subP);
+            }
         }
 
         System.out.println(result.toString());
+
+        if (waterAmount < 0){
+            waterAmount = waterAmount * -1;
+        }
+
+        return waterAmount;
     }
 
     // HTTP POST request

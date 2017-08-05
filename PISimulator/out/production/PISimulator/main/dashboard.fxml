@@ -49,5 +49,15 @@
             <Slider fx:id="wSlider" majorTickUnit="10.0" max="10.0" minorTickCount="10" showTickLabels="true" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
          </children>
       </GridPane>
+      <Label fx:id="l1" layoutX="196.0" layoutY="483.0" text="Label" textFill="#f80000">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="l2" layoutX="508.0" layoutY="483.0" text="Label" textFill="#f80000">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
