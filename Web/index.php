@@ -1,19 +1,19 @@
 <?php
     require ('db_connect.php');
 
-    $farmerID = 100;
-    $cropID1 = 1000;
-    $cropID2 = 1001;
+//    $farmerID = 100;
+    $cropID1 = 1;
+    $cropID2 = 2;
 
     //Query for the temperature for crop 1
-    $temp_sql1 = "SELECT temperature FROM crop_condition WHERE farmer_has_crop_farmer_id = '$farmerID' and farmer_has_crop_crop_id = '$cropID1'";
+    $temp_sql1 = "SELECT temperature FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID1' order by id desc limit 1";
     //Query for the temperature for crop 2
-    $temp_sql2 = "SELECT temperature FROM crop_condition WHERE farmer_has_crop_farmer_id = '$farmerID' and farmer_has_crop_crop_id = '$cropID2'";
+    $temp_sql2 = "SELECT temperature FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID2' order by id desc limit 1";
 
     //Query for the water level for crop 1
-    $water_sql1 = "SELECT SUM(rec_water) AS waterlvl1 FROM crop_condition WHERE farmer_has_crop_farmer_id = $farmerID and farmer_has_crop_crop_id = $cropID1 AND calculated_date BETWEEN '2017-05-03 00:00:00' AND '2017-05-14 00:00:00'";
+    $water_sql1 = "SELECT ROUND(SUM(rec_water),2) AS waterlvl1 FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID1' AND calculated_date BETWEEN '2017-08-03 00:00:00' AND '2017-08-31 00:00:00'";
     //Query for the temperature for crop 2
-    $water_sql2 = "SELECT SUM(rec_water) AS waterlvl2 FROM crop_condition WHERE farmer_has_crop_farmer_id = $farmerID and farmer_has_crop_crop_id = $cropID2 AND calculated_date BETWEEN '2017-05-03 00:00:00' AND '2017-05-14 00:00:00'";
+    $water_sql2 = "SELECT ROUND(SUM(rec_water),2) AS waterlvl2 FROM crop_condition WHERE farmer_has_crop_crop_id = '$cropID2' AND calculated_date BETWEEN '2017-08-03 00:00:00' AND '2017-08-31 00:00:00'";
 
     //temp values
     $temp1 = mysqli_query($conn, $temp_sql1);
@@ -174,7 +174,7 @@
             <i class="icon fa fa-umbrella fa-4x"></i>
             <div class="content">
               <div class="title">Total Water Volume for the Week</div>
-              <div class="value"><span class="sign">Ltrs.</span><?php echo $water_val1['waterlvl1']; ?></div>
+              <div class="value"><span class="sign">Ltrs.</span><?php echo $water_val2['waterlvl2']; ?></div>
             </div>
           </div>
         </a>
